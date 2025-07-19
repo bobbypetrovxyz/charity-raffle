@@ -1,0 +1,33 @@
+{
+    "root": "0x7e882f5cd23d22f0255cace777154e283a6e40c852912ff3765e6bb3312f8cdc",
+    "participants": [
+        {
+            "address": "0xf9681Cb4b3Fd6ea3512BAfADCDcb25be41affc7a",
+            "proof": [
+                "0x906693206a1009fd8975d287f7ad4b182f14775d1bacdbdec23c6f614eeafcf9",
+                "0xf972334bd2f13bdab871e1557ec515eaca716a1a02d490573c706b791e07a9cb"
+            ]
+        },
+        {
+            "address": "0x87C481a4934df1C57Fe4Cd9833bDF28bDa96b20D",
+            "proof": [
+                "0x78965e13841747ac17e7a2ab7e777316055343d6f404418b0cfa51c5f742ccf0",
+                "0x323fa43f87d92c6984dfb1b184f594636a20b1cd51f8397d71f5318587125697"
+            ]
+        },
+        {
+            "address": "0x38234f5C88F0d1CcC5b85D4Da6805E6E243a8cBc",
+            "proof": [
+                "0x4d88eb5f0bff5e148bb5f59d0e656bd195c3dc460c592c313f4d614b02490c7a",
+                "0x323fa43f87d92c6984dfb1b184f594636a20b1cd51f8397d71f5318587125697"
+            ]
+        },
+        {
+            "address": "0xF38EAC99B2eB75d39De3886001D9a453934F8a01",
+            "proof": [
+                "0xf60046afa37ce2c6db85279fa44cee023c0a54ddb9d8428d78d92e040f80de7a",
+                "0xf972334bd2f13bdab871e1557ec515eaca716a1a02d490573c706b791e07a9cb"
+            ]
+        }
+    ]
+}
