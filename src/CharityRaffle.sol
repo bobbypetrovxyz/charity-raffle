@@ -39,6 +39,8 @@ contract CharityRaffle is OwnableUpgradeable, VRFConsumerBaseV2PlusCustom {
     error TransferFailed();
     error InsufficientFunds();
     error WinnersNotSelected();
+    error InsufficientContractBalance();
+    error CharityWalletNotSet();
 
     function initialize(
         address _owner,
@@ -147,7 +149,7 @@ contract CharityRaffle is OwnableUpgradeable, VRFConsumerBaseV2PlusCustom {
         require(winners[msg.sender], NotAWinner());
         require(
             address(this).balance >= winnerReward,
-            "Insufficient contract balance"
+            InsufficientContractBalance()
         );
 
         winners[msg.sender] = false; // Prevent double claiming
@@ -162,9 +164,9 @@ contract CharityRaffle is OwnableUpgradeable, VRFConsumerBaseV2PlusCustom {
         require(winnersSelected, WinnersNotSelected());
         require(
             address(this).balance >= charityFunds,
-            "Insufficient contract balance for charity funds"
+            InsufficientContractBalance()
         );
-        require(charityWallet != address(0), "Charity wallet not set");
+        require(charityWallet != address(0), CharityWalletNotSet());
 
         (bool success, ) = payable(charityWallet).call{value: charityFunds}("");
         require(success, TransferFailed());

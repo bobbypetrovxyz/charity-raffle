@@ -1,12 +1,10 @@
+For project requirements see `requirements.md`
+
 ## How to install
 
 ```
 $ forge install
 ```
-
-## How to test
-
-No automation tests
 
 ## Deployment steps
 
@@ -20,7 +18,7 @@ ETHERSCAN_API_KEY=
 2. Run deploy script
 
 ```
-$ forge script script/deploy.s.sol:DeployScript --broadcast --verify -vvvv --rpc-url sepolia --private-key <> --etherscan-api-key "${ETHERSCAN_API_KEY}"
+$ forge script script/deploy.s.sol:DeployScript --broadcast --verify -vvvv --rpc-url sepolia --private-key "${PRIVATE_KEY}" --etherscan-api-key "${ETHERSCAN_API_KEY}"
 ```
 
 3. Run verify script if needed
