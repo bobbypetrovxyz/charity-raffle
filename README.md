@@ -27,6 +27,15 @@ $ forge script script/deploy.s.sol:DeployScript --broadcast --verify -vvvv --rpc
 $ forge verify-contract <address>  ./src/CharityRaffle.sol:CharityRaffle --chain-id 11155111 --api-key "${ETHERSCAN_API_KEY}"
 ```
 
+## Generate merkle proofs
+
+```
+cd ./js_scripts
+npm init --yes
+npm i @openzeppelin/merkle-tree
+node generateMerkle.js 
+```
+
 ## Links to contracts
 
 - Proxy - 0x8D1F1984CA98A1a7a4dA79B85C7946F67D429De2
